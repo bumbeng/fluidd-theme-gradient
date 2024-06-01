@@ -1,2 +1,2 @@
-# fluidd-theme-gradien
+# fluidd-theme-gradient
 Mainsail Theme
