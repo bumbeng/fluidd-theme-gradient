@@ -1,3 +1,38 @@
+video {
+    border-radius: 8px;
+}
+.preview-options,
+.preview-name,
+.camera-name, .camera-frames {
+    background: #28282895 !important;
+}
+g#background {
+    opacity: 0.4;
+}
+.v-card.collapsable-card .v-card__title.collapsable-card-title .v-tabs .v-tabs-bar__content>.v-tab:first-child:before {
+    border-top-left-radius: 10px !important;
+}
+.v-toolbar__items {
+    padding: 8px;
+}
+button.v-btn.v-btn--is-elevated.v-btn--has-bg.theme--dark.v-size--default.btncolor {
+    border-radius: 6px;
+}
+button.v-btn.v-btn--disabled.v-btn--has-bg.theme--dark.v-size--default {
+    border: none !important;
+}
+button.positioning-toggle-button.v-btn.v-item--active.v-btn--active.v-btn--disabled.v-btn--has-bg.theme--dark.v-size--default {
+    background: #18171795 !important;
+}
+.theme--dark.v-btn.v-btn--disabled.v-btn--has-bg {
+    background-color: #00000029 !important;
+    opacity: 0.8;
+}
+span.v-icon.notranslate.spool-icon.theme--dark {
+    stroke: none !important;
+    opacity: 0.7;
+    filter: drop-shadow(0px 0px 10px #343434);
+}
 .fill-height.v-card.v-sheet.theme--dark {
     background: #282828;
 }
@@ -13,7 +48,7 @@ header.v-sheet.theme--dark.v-toolbar.v-toolbar--dense {
 .v-card__title.collapsable-card-title.card-heading.draggable {
     border-radius: 10px;
 }
-.v-card.collapsed>.card-heading[data-v-c1579253] {
+.v-card.collapsed>.card-heading {
     border-radius: 10px !important;
 }
 .sc-label.text-body-1.pr-0.pr-sm-3.pb-0.pb-sm-3.col-sm-6.col-12.align-self-center {
@@ -22,7 +57,7 @@ header.v-sheet.theme--dark.v-toolbar.v-toolbar--dense {
 .px-2.py-1.text-center.stat-square.v-card.v-sheet.v-sheet--outlined.theme--dark,
 .theme--dark.v-data-table tbody tr.v-data-table__selected,
 .theme--dark.v-text-field--solo>.v-input__control>.v-input__slot,
-.camera-container[data-v-2ecab8f2],
+.camera-container.v-sheet.theme--dark.elevation-0,
 .mb-4.v-card.v-sheet.theme--dark.elevation-5,
 .v-card__text.pa-0 {
     background-color: #28282860;
@@ -45,6 +80,7 @@ div#card-content {
     --v-warning-base: #c97e20;
     --v-card-heading-base: #28282895;
     --v-btncolor-base: #28282870;
+    --v-secondary-base: #c4c3c3;
 }
 .v-progress-linear__background.primary {
     background-color: #3f3737 !important;
@@ -68,13 +104,13 @@ div#card-content {
 }
 main.v-main {
     background-color: hsl(217deg 3.4% 34.41%) !important;
-    background-image:
-    radial-gradient(at 3% 24%, hsl(42deg 21.09% 45.64%) 0px, transparent 50%),
-    radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
-    radial-gradient(at 12% 62%, hsl(139deg 33.59% 56.35% / 60%) 0px, transparent 50%),
-    radial-gradient(at 47% 60%, hsl(24.71deg 100% 20.55% / 75%) 0px, transparent 50%),
-    radial-gradient(at 85% 2%, hsl(157.63deg 56.27% 28.31% / 69%) 0px, transparent 50%),
-    radial-gradient(at 89% 56%, hsl(50.37deg 31.75% 45.53% / 79%) 0px, transparent 50%) !important;
+    background-image: 
+      radial-gradient(at 3% 24%, hsl(42deg 21.09% 45.64%) 0px, transparent 50%),
+      radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
+      radial-gradient(at 12% 62%, hsl(139deg 33.59% 56.35% / 60%) 0px, transparent 50%),
+      radial-gradient(at 47% 60%, hsl(24.71deg 100% 20.55% / 75%) 0px, transparent 50%),
+      radial-gradient(at 85% 2%, hsl(157.63deg 56.27% 28.31% / 69%) 0px, transparent 50%),
+      radial-gradient(at 89% 56%, hsl(50.37deg 31.75% 45.53% / 79%) 0px, transparent 50%) !important;
 }
 .v-card.v-sheet.theme--dark.panel.settings-menu-dialog,
 .v-menu__content.theme--dark.menuable__content__active,
@@ -82,11 +118,11 @@ main.v-main {
 .v-card.v-sheet.theme--dark.rounded-0 {
     background-color: hsl(60.23deg 1.37% 31.07%) !important;
     background-image: radial-gradient(at 3% 24%, hsl(0deg 0% 13.53% / 19%) 0px, transparent 50%),
-    radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
-    radial-gradient(at 12% 62%, hsl(39.29deg 66.2% 19.04% / 25%) 0px, transparent 50%),
-    radial-gradient(at 47% 60%, hsl(38.08deg 65.27% 22.96% / 5%) 0px, transparent 50%),
-    radial-gradient(at 85% 2%, hsl(53.13deg 27.76% 43.26% / 50%) 0px, transparent 50%),
-    radial-gradient(at 89% 56%, hsl(50.37deg 19.66% 25.13% / 79%) 0px, transparent 50%) !important;
+     radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
+     radial-gradient(at 12% 62%, hsl(39.29deg 66.2% 19.04% / 25%) 0px, transparent 50%),
+     radial-gradient(at 47% 60%, hsl(38.08deg 65.27% 22.96% / 5%) 0px, transparent 50%),
+     radial-gradient(at 85% 2%, hsl(53.13deg 27.76% 43.26% / 50%) 0px, transparent 50%),
+     radial-gradient(at 89% 56%, hsl(50.37deg 19.66% 25.13% / 79%) 0px, transparent 50%) !important;
 }
 /* box-color */
 .v-sheet.v-card {

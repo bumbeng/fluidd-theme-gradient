@@ -14,11 +14,11 @@
 - insert these lines with `!! your url !!` of the logo.png file into custom.css
 
       .logo-wrapper {
-          display: none;
-      }
-      .theme--dark .toolbar-logo {
-          background-image: url(http://mainsailos.local/server/files/config/.fluidd-theme/sidebar-logo.png) !important;
-          background-size: 46px;
-          background-repeat: no-repeat;
-          background-position: center;
-      }
+            display: none !important;
+        }
+        .theme--dark .toolbar-logo {
+            background-image: url(http://mainsailos.local/server/files/config/.fluidd-theme/sidebar-logo.png) !important;
+            background-size: 48px !important;
+            background-repeat: no-repeat !important;
+            background-position: center !important;
+        }
