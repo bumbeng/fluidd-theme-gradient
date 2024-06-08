@@ -1,3 +1,26 @@
+.v-text-field.v-input--is-focused>.v-input__control>.v-input__slot:after {
+    display: none;
+}
+.v-ripple__animation--in {
+    transition: all 0.2s cubic-bezier(0, 1, 1, 0);
+}
+.v-ripple__animation {
+    border-radius: inherit !important;
+    background: #282828 !important;
+}
+.v-btn--block {
+    max-width: 100%;
+}
+.text-body-1.py-0.col-sm-5.col-12.align-self-center {
+    margin-bottom: 5px;
+}
+.v-card__text.body-1.text-body-1.py-3 {
+    text-wrap: pretty;
+}
+.v-input.v-input--hide-details.v-input--is-label-active.v-input--is-dirty.v-input--is-focused.v-input--dense.theme--dark.v-text-field.v-text-field--single-line.v-text-field--filled.v-text-field--is-booted.v-text-field--enclosed.primary--text {
+    border: solid 1px;
+    border-radius: 8px;
+}
 video {
     border-radius: 8px;
 }
@@ -105,12 +128,12 @@ div#card-content {
 main.v-main {
     background-color: hsl(217deg 3.4% 34.41%) !important;
     background-image: 
-      radial-gradient(at 3% 24%, hsl(42deg 21.09% 45.64%) 0px, transparent 50%),
-      radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
-      radial-gradient(at 12% 62%, hsl(139deg 33.59% 56.35% / 60%) 0px, transparent 50%),
-      radial-gradient(at 47% 60%, hsl(24.71deg 100% 20.55% / 75%) 0px, transparent 50%),
-      radial-gradient(at 85% 2%, hsl(157.63deg 56.27% 28.31% / 69%) 0px, transparent 50%),
-      radial-gradient(at 89% 56%, hsl(50.37deg 31.75% 45.53% / 79%) 0px, transparent 50%) !important;
+        radial-gradient(at 3% 24%, hsl(42deg 21.09% 45.64%) 0px, transparent 50%),
+        radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
+        radial-gradient(at 12% 62%, hsl(139deg 33.59% 56.35% / 60%) 0px, transparent 50%),
+        radial-gradient(at 47% 60%, hsl(24.71deg 100% 20.55% / 75%) 0px, transparent 50%),
+        radial-gradient(at 85% 2%, hsl(157.63deg 56.27% 28.31% / 69%) 0px, transparent 50%),
+        radial-gradient(at 89% 56%, hsl(50.37deg 31.75% 45.53% / 79%) 0px, transparent 50%) !important;
 }
 .v-card.v-sheet.theme--dark.panel.settings-menu-dialog,
 .v-menu__content.theme--dark.menuable__content__active,
@@ -118,13 +141,12 @@ main.v-main {
 .v-card.v-sheet.theme--dark.rounded-0 {
     background-color: hsl(60.23deg 1.37% 31.07%) !important;
     background-image: radial-gradient(at 3% 24%, hsl(0deg 0% 13.53% / 19%) 0px, transparent 50%),
-     radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
-     radial-gradient(at 12% 62%, hsl(39.29deg 66.2% 19.04% / 25%) 0px, transparent 50%),
-     radial-gradient(at 47% 60%, hsl(38.08deg 65.27% 22.96% / 5%) 0px, transparent 50%),
-     radial-gradient(at 85% 2%, hsl(53.13deg 27.76% 43.26% / 50%) 0px, transparent 50%),
-     radial-gradient(at 89% 56%, hsl(50.37deg 19.66% 25.13% / 79%) 0px, transparent 50%) !important;
+        radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
+        radial-gradient(at 12% 62%, hsl(39.29deg 66.2% 19.04% / 25%) 0px, transparent 50%),
+        radial-gradient(at 47% 60%, hsl(38.08deg 65.27% 22.96% / 5%) 0px, transparent 50%),
+        radial-gradient(at 85% 2%, hsl(53.13deg 27.76% 43.26% / 50%) 0px, transparent 50%),
+        radial-gradient(at 89% 56%, hsl(50.37deg 19.66% 25.13% / 79%) 0px, transparent 50%) !important;
 }
-/* box-color */
 .v-sheet.v-card {
     border-radius: 10px !important;
     box-shadow: 0 3px 10px -2px #0003, 0 2px 2px #00000024, 0 1px 8px #0000001f !important;
@@ -133,7 +155,6 @@ main.v-main {
 .theme--dark.v-tabs-items {
     background-color: transparent;
 }
-/* sub-header */
 .theme--dark.v-toolbar.v-sheet,
 .theme--dark.v-data-table.v-data-table--fixed-header thead th {
     background-color: #28282870;
@@ -144,12 +165,10 @@ main.v-main {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-/* main-header */
 .theme--dark.v-app-bar.v-toolbar.v-sheet {
     background-color: #28282880!important;
     box-shadow: 0 3px 10px -2px #0003, 0 2px 2px #00000024, 0 1px 8px #0000001f !important;
 }
-/* sidebar */
 .theme--dark.v-navigation-drawer {
     background-color: #28282840!important;
     backdrop-filter: blur(10px);
@@ -181,6 +200,11 @@ main.v-main {
 }
 .v-menu__content.theme--dark.menuable__content__active {
     border-radius: 10px !important;
+    border: solid 1px;
+    border-color: #56565661;
+}
+.v-sheet.v-list:not(.v-sheet--outlined) {
+    box-shadow: 0 0 #000, 0 0 #000000, 0 0 #000000;
 }
 .theme--dark.v-list {
     background: transparent;
@@ -259,9 +283,6 @@ nav.v-navigation-drawer.v-navigation-drawer--clipped.v-navigation-drawer--fixed.
     border-top: solid 1px;
     border-color: #818181;
     box-shadow: 0 0 10px -1px #000000;
-}
-.v-input--selection-controls__input:hover .v-input--selection-controls__ripple:before {
-    display: none;
 }
 .theme--dark.v-list-item:hover:before {
     opacity: .18;
@@ -345,4 +366,7 @@ button.flex-grow-1.v-btn.v-btn--is-elevated.v-btn--has-bg.theme--dark.v-size--de
 }
 .vue-recycle-scroller.console-scroller.ready.direction-vertical {
     padding: 10px;
+}
+.v-input--selection-controls__input:hover .v-input--selection-controls__ripple:before {
+    display: none;
 }
