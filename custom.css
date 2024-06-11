@@ -1,3 +1,53 @@
+.v-text-field--filled>.v-input__control>.v-input__slot, .v-text-field--full-width>.v-input__control>.v-input__slot, .v-text-field--outlined>.v-input__control>.v-input__slot {
+    max-height: 400px;
+}
+.theme--dark.app-btn-group.app-btn-group--divided>.v-btn:first-child {
+    border-bottom-left-radius: 6px !important;
+    border-top-left-radius: 6px !important;
+}
+.theme--dark.app-btn-group.app-btn-group--divided>.v-btn:last-child {
+    border-bottom-right-radius: 6px !important;
+    border-top-right-radius: 6px !important;
+}
+.console-command .v-text-field__slot input {
+    font-family: 'Roboto' !important;
+    font-size: 0.95rem;
+}
+button.px-0.flex-grow-1.v-btn.v-btn--has-bg.theme--dark.v-size--default {
+    border-radius: 6px;
+}
+.col-sm-6.col-md-12.col-lg-6.col-12 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.app-setting-control .sc-content {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.col-md-8 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+button.v-btn.v-btn--block.v-btn--is-elevated.v-btn--has-bg.theme--dark.v-size--default.btncolor,
+button.v-btn.v-btn--block.v-btn--disabled.v-btn--has-bg.theme--dark.v-size--default {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+.px-2.py-1.text-center.stat-square.justify-center.v-card.v-sheet.v-sheet--outlined.theme--dark {
+    box-shadow: 0px 0px 5px -2px black !important;
+}
+.v-application .btncolor {
+    background: #1c1c1c57 !important;
+}
+.chart {
+    max-height: 180px;
+}
 .v-text-field.v-input--is-focused>.v-input__control>.v-input__slot:after {
     display: none;
 }
@@ -37,9 +87,6 @@ g#background {
 }
 .v-toolbar__items {
     padding: 8px;
-}
-button.v-btn.v-btn--is-elevated.v-btn--has-bg.theme--dark.v-size--default.btncolor {
-    border-radius: 6px;
 }
 button.v-btn.v-btn--disabled.v-btn--has-bg.theme--dark.v-size--default {
     border: none !important;
@@ -127,48 +174,49 @@ div#card-content {
 }
 main.v-main {
     background-color: hsl(217deg 3.4% 34.41%) !important;
-    background-image: 
-        radial-gradient(at 3% 24%, hsl(42deg 21.09% 45.64%) 0px, transparent 50%),
-        radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
-        radial-gradient(at 12% 62%, hsl(139deg 33.59% 56.35% / 60%) 0px, transparent 50%),
-        radial-gradient(at 47% 60%, hsl(24.71deg 100% 20.55% / 75%) 0px, transparent 50%),
-        radial-gradient(at 85% 2%, hsl(157.63deg 56.27% 28.31% / 69%) 0px, transparent 50%),
-        radial-gradient(at 89% 56%, hsl(50.37deg 31.75% 45.53% / 79%) 0px, transparent 50%) !important;
+    background-image: radial-gradient(at 3% 24%, hsl(42deg 21.09% 45.64%) 0px, transparent 50%),
+    radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
+    radial-gradient(at 12% 62%, hsl(186.06deg 33.26% 44.32% / 60%) 0px, transparent 50%),
+    radial-gradient(at 47% 60%, hsl(24.71deg 100% 20.55% / 75%) 0px, transparent 50%),
+    radial-gradient(at 85% 2%, hsl(42.06deg 23.02% 41.09% / 93%) 0px, transparent 50%),
+    radial-gradient(at 89% 56%, hsl(50.37deg 31.75% 45.53% / 79%) 0px, transparent 50%) !important;
 }
 .v-card.v-sheet.theme--dark.panel.settings-menu-dialog,
 .v-menu__content.theme--dark.menuable__content__active,
 .v-dialog--scrollable>.v-card, .v-dialog--scrollable>form>.v-card,
-.v-card.v-sheet.theme--dark.rounded-0 {
+.v-card.v-sheet.theme--dark.rounded-0,
+.v-snack__wrapper.v-sheet.theme--dark.elevation-24 {
     background-color: hsl(60.23deg 1.37% 31.07%) !important;
     background-image: radial-gradient(at 3% 24%, hsl(0deg 0% 13.53% / 19%) 0px, transparent 50%),
-        radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
-        radial-gradient(at 12% 62%, hsl(39.29deg 66.2% 19.04% / 25%) 0px, transparent 50%),
-        radial-gradient(at 47% 60%, hsl(38.08deg 65.27% 22.96% / 5%) 0px, transparent 50%),
-        radial-gradient(at 85% 2%, hsl(53.13deg 27.76% 43.26% / 50%) 0px, transparent 50%),
-        radial-gradient(at 89% 56%, hsl(50.37deg 19.66% 25.13% / 79%) 0px, transparent 50%) !important;
+    radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
+    radial-gradient(at 12% 62%, hsl(39.29deg 66.2% 19.04% / 25%) 0px, transparent 50%),
+    radial-gradient(at 47% 60%, hsl(38.08deg 65.27% 22.96% / 5%) 0px, transparent 50%),
+    radial-gradient(at 85% 2%, hsl(53.13deg 27.76% 43.26% / 50%) 0px, transparent 50%),
+    radial-gradient(at 89% 56%, hsl(50.37deg 19.66% 25.13% / 79%) 0px, transparent 50%) !important;
 }
+/* box-color */
 .v-sheet.v-card {
     border-radius: 10px !important;
-    box-shadow: 0 3px 10px -2px #0003, 0 2px 2px #00000024, 0 1px 8px #0000001f !important;
+    box-shadow: 0 0px 10px -2px #0003, 0 0px 2px #00000024, 0 0px 8px #0000001f !important;
 }
 .theme--dark.v-data-table,
 .theme--dark.v-tabs-items {
     background-color: transparent;
 }
-.theme--dark.v-toolbar.v-sheet,
+/* sub-header */
 .theme--dark.v-data-table.v-data-table--fixed-header thead th {
     background-color: #28282870;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 .expanded header.v-toolbar {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+/* main-header */
 .theme--dark.v-app-bar.v-toolbar.v-sheet {
     background-color: #28282880!important;
     box-shadow: 0 3px 10px -2px #0003, 0 2px 2px #00000024, 0 1px 8px #0000001f !important;
 }
+/* sidebar */
 .theme--dark.v-navigation-drawer {
     background-color: #28282840!important;
     backdrop-filter: blur(10px);
@@ -198,7 +246,8 @@ main.v-main {
 .file-system .theme--dark.v-data-table tr>td.actions div:before {
     background: none !important;
 }
-.v-menu__content.theme--dark.menuable__content__active {
+.v-menu__content.theme--dark.menuable__content__active,
+.v-dialog--scrollable>.v-card, .v-dialog--scrollable>form>.v-card {
     border-radius: 10px !important;
     border: solid 1px;
     border-color: #56565661;
@@ -369,4 +418,13 @@ button.flex-grow-1.v-btn.v-btn--is-elevated.v-btn--has-bg.theme--dark.v-size--de
 }
 .v-input--selection-controls__input:hover .v-input--selection-controls__ripple:before {
     display: none;
+}
+.logo-wrapper {
+    display: none !important;
+}
+.theme--dark .toolbar-logo {
+    background-image: url(http://mainsailos.local/server/files/config/.fluidd-theme/sidebar-logo.png) !important;
+    background-size: 48px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
 }
