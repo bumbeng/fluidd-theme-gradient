@@ -173,12 +173,13 @@ div#card-content {
 }
 main.v-main {
     background-color: hsl(217deg 3.4% 34.41%) !important;
-    background-image: radial-gradient(at 3% 24%, hsl(42deg 21.09% 45.64%) 0px, transparent 50%),
-    radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
-    radial-gradient(at 12% 62%, hsl(186.06deg 33.26% 44.32% / 60%) 0px, transparent 50%),
-    radial-gradient(at 47% 60%, hsl(24.71deg 100% 20.55% / 75%) 0px, transparent 50%),
-    radial-gradient(at 85% 2%, hsl(42.06deg 23.02% 41.09% / 93%) 0px, transparent 50%),
-    radial-gradient(at 89% 56%, hsl(50.37deg 31.75% 45.53% / 79%) 0px, transparent 50%) !important;
+    background-image: 
+        radial-gradient(at 3% 24%, hsl(42deg 21.09% 45.64%) 0px, transparent 50%),
+        radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
+        radial-gradient(at 12% 62%, hsl(139deg 33.59% 56.35% / 60%) 0px, transparent 50%),
+        radial-gradient(at 47% 60%, hsl(24.71deg 100% 20.55% / 75%) 0px, transparent 50%),
+        radial-gradient(at 85% 2%, hsl(157.63deg 56.27% 28.31% / 69%) 0px, transparent 50%),
+        radial-gradient(at 89% 56%, hsl(50.37deg 31.75% 45.53% / 79%) 0px, transparent 50%) !important;
 }
 .v-card.v-sheet.theme--dark.panel.settings-menu-dialog,
 .v-menu__content.theme--dark.menuable__content__active,
@@ -186,12 +187,13 @@ main.v-main {
 .v-card.v-sheet.theme--dark.rounded-0,
 .v-snack__wrapper.v-sheet.theme--dark.elevation-24 {
     background-color: hsl(60.23deg 1.37% 31.07%) !important;
-    background-image: radial-gradient(at 3% 24%, hsl(0deg 0% 13.53% / 19%) 0px, transparent 50%),
-    radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
-    radial-gradient(at 12% 62%, hsl(39.29deg 66.2% 19.04% / 25%) 0px, transparent 50%),
-    radial-gradient(at 47% 60%, hsl(38.08deg 65.27% 22.96% / 5%) 0px, transparent 50%),
-    radial-gradient(at 85% 2%, hsl(53.13deg 27.76% 43.26% / 50%) 0px, transparent 50%),
-    radial-gradient(at 89% 56%, hsl(50.37deg 19.66% 25.13% / 79%) 0px, transparent 50%) !important;
+    background-image:
+        radial-gradient(at 3% 24%, hsl(0deg 0% 13.53% / 19%) 0px, transparent 50%),
+        radial-gradient(at 10% 12%, hsla(47, 45%, 43%, 0.19) 0px, transparent 50%),
+        radial-gradient(at 12% 62%, hsl(39.29deg 66.2% 19.04% / 25%) 0px, transparent 50%),
+        radial-gradient(at 47% 60%, hsl(38.08deg 65.27% 22.96% / 5%) 0px, transparent 50%),
+        radial-gradient(at 85% 2%, hsl(53.13deg 27.76% 43.26% / 50%) 0px, transparent 50%),
+        radial-gradient(at 89% 56%, hsl(50.37deg 19.66% 25.13% / 79%) 0px, transparent 50%) !important;
 }
 .v-sheet.v-card {
     border-radius: 10px !important;
