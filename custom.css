@@ -48,9 +48,6 @@ button.v-btn.v-btn--block.v-btn--disabled.v-btn--has-bg.theme--dark.v-size--defa
 .v-application .btncolor {
     background: #1c1c1c57 !important;
 }
-.chart {
-    max-height: 180px;
-}
 .v-text-field.v-input--is-focused>.v-input__control>.v-input__slot:after {
     display: none;
 }
