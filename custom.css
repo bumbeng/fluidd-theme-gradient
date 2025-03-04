@@ -1,3 +1,7 @@
+.col-sm-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 .v-btn.v-size--default.btncolor.flex-grow-1 {
     border-radius: 6px !important;
 }
